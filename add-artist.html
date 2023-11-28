@@ -7,7 +7,22 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     
-    <body>
-
-    </body>
+    <body class="bg-red-900">
+        <nav class="flex h-16 w-screen justify-around items-center bg-red-900 rounded-md">
+            <a class="flex h-full items-center" href="index.html">
+                <h1 class="text-zinc-50 font-semibold">ArtistILike</h1>
+            </a>
+    
+            <div class="flex w-2/4 h-full items-center">
+                <ul class="flex w-full justify-around items-center mx-12">
+                    <li><a href="miles.html" class="text-stone-100 hover:text-neutral-100 font-semibold transition ease-out duration-500 border-b border-transparent hover:border-white">Miles</a></li>
+                    <li><a href="karms.html" class="text-stone-100 hover:text-neutral-100 font-semibold transition ease-out duration-500 border-b border-transparent hover:border-white">Karms</a></li>
+                    <li><a href="dairo.html" class="text-stone-100 hover:text-neutral-100 font-semibold transition ease-out duration-500 border-b border-transparent hover:border-white">Dairo</a></li>
+                </ul>
+            </div>
+    
+            <a href="add-artist.html" class="rounded-lg bg-neutral-900 h-8 w-40 items-center text-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-700 hover:scale-105 hover:border">
+                <h3 class="text-zinc-50 font-semibold">Request New Artist</h3>
+            </a>
+        </nav>
 </html>
