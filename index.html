@@ -8,7 +8,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     
-    <body class="bg-red-900 flex flex-col columns-3 gap-8">
+    <body class="bg-red-900 flex flex-col columns-3 gap-8 overflow-hidden">
         <nav class="flex h-16 w-screen justify-around items-center bg-red-900 rounded-md">
             <a class="flex h-full items-center" href="index.html">
                 <h1 class="text-zinc-50 font-semibold">ArtistILike</h1>
@@ -27,7 +27,7 @@
             </a>
         </nav>
 
-        <main class="flex h-full bg-neutral-900">
+        <main class="flex h-full bg-neutral-900 p-2 mx-2">
             <a href="" >
                 <div>
                     <img>
@@ -53,26 +53,16 @@
 
     
 
-    <footer class="bg-white w-full shadow m-4 dark:bg-gray-800">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">TonyK™</a>. All Rights Reserved.
-          </span>
-
-        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-                <a href="#" class="hover:underline me-4 md:me-6">About</a>
-            </li>
-            <li>
-                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-            </li>
-            <li>
-                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-            </li>
-            <li>
-                <a href="#" class="hover:underline">Contact</a>
-            </li>
-        </ul>
+    <footer class="w-full h-20 absolute bottom-0 left-0 shadow-md ">
+        <div class="flex justify-between mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 w-2/7">© 2023 <a href="https://flowbite.com/" class="hover:underline">TonyK™</a>. All Rights Reserved.</span>
+    
+            <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 w-2/6 justify-center">
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
         </div>
     </footer>
+    
 
 </html>
