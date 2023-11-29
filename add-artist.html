@@ -22,6 +22,57 @@
             </div>
         </nav>
 
+        <main class="flex flex-col gap-6 min-h-screen p-4">
+            <div class="flex justify-center">
+                <h2 class="text-white font-semibold text-2xl">Make a request to add a new artist</h2>
+            </div>
+
+            <form>
+                <!-- Artist Name - Genre of Art - Favourite Art Piece - References - Brief detail - Pictures -->
+                <div>
+                    <label for="artist-name">Artist Name</label>
+                    <input type="text" name="artist-name"><br>
+                </div>
+            
+                <div>
+                    <label for="genre">Genre of Art</label>
+                    <select id="genre" name="artist-genre">
+                        <option value="no-genre" disabled selected>Select a genre</option>
+                        <option value="abstract">Abstract</option>
+                        <option value="portrait">Portrait</option>
+                        <option value="landscape">Landscape</option>
+                        <option value="digital">Digital Art</option>
+                        <!-- Add more genre options as needed -->
+                    </select>
+                </div>
+            
+                <div>
+                    <label for="favourite-piece">What is your favourite art piece of theirs?</label>
+                    <input type="text" id="favourite-piece" name="favourite-piece">
+                </div>
+            
+                <div>
+                    <label for="artist-contact">Media References (E.G: Instagram, Website, Exhibition etc)</label>
+                    <input type="text" name="reference-one">
+                    <input type="text" name="reference-two">
+                    <input type="text" name="reference-three">
+                </div>
+            
+                <div>
+                    <label for="customer-summary">Give a brief explanation of what you like about this artist :)</label>
+                    <textarea name="customer-summary"></textarea>
+                </div>
+            
+                <div>
+                    <label for="artist-pictures">Upload Pictures</label>
+                    <input type="file" name="artist-pictures" accept="image/*" multiple>
+                    <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple images.</p>
+                </div>
+            </form>
+            
+            
+        </main>
+
         <!-- TODO: Prevent this from moving once the artists have been highlighted -->
         <footer class="w-full shadow-md h-12">
             <div class="flex justify-center mx-auto max-w-screen-xl md:flex md:items-center md:justify-between">
