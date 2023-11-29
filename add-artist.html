@@ -31,24 +31,23 @@
                 <!-- Artist Name - Genre of Art - Favourite Art Piece - References - Brief detail - Pictures -->
                 <div class="flex flex-col w-full">
                     <label for="artist-name">*Artist Name</label>
-                    <input class="border-2 border-gray-950 bg-transparent" type="text" name="artist-name" required><br>
+                    <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" name="artist-name" required><br>
                 </div>
             
                 <div class="flex flex-col mb-4 w-full">
                     <label for="genre">*Genre of Art</label>
-                    <select class="border-2 border-gray-950 bg-transparent" id="genre" name="artist-genre" required>
+                    <select class="border-2 border-gray-950 bg-transparent w-1/4" id="genre" name="artist-genre" required>
                         <option value="no-genre" disabled selected>Select a genre</option>
                         <option value="abstract">Abstract</option>
                         <option value="portrait">Portrait</option>
                         <option value="landscape">Landscape</option>
                         <option value="digital">Digital Art</option>
-                        <!-- Add more genre options as needed -->
                     </select>
                 </div>
             
                 <div class="flex flex-col mb-4 w-full">
                     <label for="favourite-piece">What is your favourite art piece of theirs?</label>
-                    <input class="border-2 border-gray-950 bg-transparent" type="text" id="favourite-piece" name="favourite-piece">
+                    <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" id="favourite-piece" name="favourite-piece">
                 </div>
             
                 <div class="flex flex-col mb-4 w-full">
@@ -69,7 +68,7 @@
                     <label for="artist-pictures">Upload Pictures 
                         <small class="italic text-sm text-gray-500">*Hold down the Ctrl (windows) or Command (Mac) button to select multiple images.*</small>
                     </label>
-                    <input class="border-2 border-gray-950 bg-transparent" type="file" name="artist-pictures" accept="image/*" multiple required>
+                    <input class="bg-transparent w-2/5" type="file" name="artist-pictures" accept="image/*" multiple>
                 </div>
 
                 <div class="flex flex-col mb-4 w-full">
