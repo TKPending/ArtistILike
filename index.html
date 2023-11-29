@@ -8,12 +8,12 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     
-    <body class="bg-red-900">
+    <body class="bg-red-900 flex flex-col columns-3 gap-8 overflow-hidden">
         <nav class="flex h-16 w-screen justify-around items-center bg-red-900 rounded-md">
             <a class="flex h-full items-center" href="index.html">
                 <h1 class="text-zinc-50 font-semibold">ArtistILike</h1>
             </a>
-        
+
             <div class="flex w-2/4 h-full items-center">
                 <ul class="flex w-full justify-around items-center mx-12">
                     <li><a href="miles.html" class="text-stone-100 hover:text-neutral-100 font-semibold transition ease-out duration-500 border-b border-transparent hover:border-white">Miles</a></li>
@@ -21,35 +21,48 @@
                         <li><a href="dairo.html" class="text-stone-100 hover:text-neutral-100 font-semibold transition ease-out duration-500 border-b border-transparent hover:border-white">Dairo</a></li>
                 </ul>
             </div>
-        
+
             <a href="add-artist.html" class="rounded-lg bg-neutral-900 h-8 w-40 items-center text-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-700 hover:scale-105 hover:border">
                 <h3 class="text-zinc-50 font-semibold">Request New Artist</h3>
             </a>
         </nav>
-    
-        <main>
+
+        <main class="flex h-full bg-neutral-900 p-2 mx-2">
             <a href="" >
                 <div>
                     <img>
                     <h3>Miles Johnston</h3>
                 </div>
             </a>
-        
+
             <a href="" >
                 <div>
                     <img>
-                    <h3>Miles Johnston</h3>
+                    <h3>karms Thammatat</h3>
                 </div>
             </a>
-        
+
             <a href="" >
                 <div>
                     <img>
-                    <h3>Miles Johnston</h3>
+                    <h3>Dario Vargas</h3>
                 </div>
             </a>
         </main>
     </body>
 
-    <footer></footer>
+    
+
+    <footer class="w-full h-20 absolute bottom-0 left-0 shadow-md ">
+        <div class="flex justify-between mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 w-2/7">© 2023 <a href="https://flowbite.com/" class="hover:underline">TonyK™</a>. All Rights Reserved.</span>
+    
+            <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 w-2/6 justify-center">
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+
 </html>
