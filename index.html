@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ArtistILike - Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-n1h3+3F5Rv6JXjCXTAiNT7hdxuF3xV2cvrS0eqPLOp4B4e7B4CiFRUXdz5bFm+9YaxiZ+3pumQoR5p6qW1IQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     
-    <body class="bg-red-900 flex flex-col columns-3 gap-8 overflow-hidden">
-        <nav class="flex h-16 w-screen justify-around items-center bg-red-900 rounded-md">
+    <body class="bg-red-900 flex flex-col gap-6 min-h-screen overflow-hidden">
+        <nav class="flex h-16 w-screen justify-around items-center bg-red-900 rounded-md shadow-md">
             <a class="flex h-full items-center" href="index.html">
                 <h1 class="text-zinc-50 font-semibold">ArtistILike</h1>
             </a>
@@ -23,46 +24,126 @@
             </div>
 
             <a href="add-artist.html" class="rounded-lg bg-neutral-900 h-8 w-40 items-center text-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-700 hover:scale-105 hover:border">
-                <h3 class="text-zinc-50 font-semibold">Request New Artist</h3>
+                <h3 class="text-zinc-50 font-bold">Request New Artist</h3>
             </a>
         </nav>
 
-        <main class="flex h-full bg-neutral-900 p-2 mx-2">
-            <a href="" >
-                <div>
-                    <img>
-                    <h3>Miles Johnston</h3>
-                </div>
-            </a>
+        <div class="flex-1 shadow-md p-4">
 
-            <a href="" >
-                <div>
-                    <img>
-                    <h3>karms Thammatat</h3>
-                </div>
-            </a>
+            <div class="flex flex-col mb-8 items-center leading-6">
+                <h1 class="text-slate-50 font-sans font-bold text-2xl mb-2">Welcome to ArtistILike</h1>
+                <h3 class="text-slate-50 font-sans font-semibold">Here are some of the artists I like, along with some of their artpieces</h3>
+            </div>
 
-            <a href="" >
-                <div>
-                    <img>
-                    <h3>Dario Vargas</h3>
+            <main class="flex justify-between gap-8 rounded-lg px-24">
+                <div class="bg-neutral-900 py-4 rounded-lg flex-1 pl-5 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]">
+                    <a class="flex flex-col" href="" >
+                        <img class="h-52 w-4/6 mx-auto mb-2 rounded-full bg-white shadow-md">
+                        
+                        <div class="my-6 flex flex-col pl-8">
+                            <h3 class="text-white font-semibold">Miles Johnston</h3>
+
+                            <ul class="flex flex-col w-2/4 my-2">
+                                <li class="mb-2">
+                                    <a class="flex gap-1 items-center" href="#">
+                                        <!-- TODO: Make this shorter -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                        </svg>
+                                        <p class="text-white">Instagram</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex gap-1 items-center" href="#">
+                                        <!-- TODO: Make this shorter -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                                            <path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/>
+                                        </svg>
+                                        <p class="text-white">Website</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
                 </div>
-            </a>
-        </main>
+    
+                <div class="bg-neutral-900 py-4 rounded-lg flex-1 pl-5 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]">
+                    <a class="flex flex-col" href="" >
+                        <img class="h-52 w-4/6 mx-auto mb-2 rounded-full bg-white shadow-md">
+                        
+                        <div class="my-6 flex flex-col pl-8">
+                            <h3 class="text-white font-semibold">Karms Thammatat</h3>
+
+                            <ul class="flex flex-col w-2/4 my-2">
+                                <li class="mb-2">
+                                    <a class="flex gap-1 items-center" href="#">
+                                        <!-- TODO: Make this shorter -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                        </svg>
+                                        <p class="text-white">Instagram</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex gap-1 items-center" href="#">
+                                        <!-- TODO: Make this shorter -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                                            <path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/>
+                                        </svg>
+                                        <p class="text-white">Website</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="bg-neutral-900 py-4 rounded-lg flex-1 pl-5 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]">
+                    <a class="flex flex-col" href="" >
+                        <img class="h-52 w-4/6 mx-auto mb-2 rounded-full bg-white shadow-md">
+                        
+                        <div class="my-4 flex flex-col pl-8">
+                            <h3 class="text-white font-semibold">Dairo Vargas</h3>
+
+                            <ul class="flex flex-col w-2/4 my-2">
+                                <li class="mb-2">
+                                    <a class="flex gap-1 items-center" href="#">
+                                        <!-- TODO: Make this shorter -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                        </svg>
+                                        <p class="text-white">Instagram</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex gap-1 items-center" href="#">
+                                        <!-- TODO: Make this shorter -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                                            <path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/>
+                                        </svg>
+                                        <p class="text-white">Website</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </main>
+        </div>
     </body>
 
     
 
-    <footer class="w-full h-20 absolute bottom-0 left-0 shadow-md ">
-        <div class="flex justify-between mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <footer class="w-full shadow-md h-12">
+        <div class="flex justify-center mx-auto max-w-screen-xl md:flex md:items-center md:justify-between">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 w-2/7">© 2023 <a href="https://flowbite.com/" class="hover:underline">TonyK™</a>. All Rights Reserved.</span>
     
             <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 w-2/6 justify-center">
-                    <a href="#" class="hover:underline">Contact</a>
-                </li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
             </ul>
         </div>
     </footer>
+    
     
 
 </html>
