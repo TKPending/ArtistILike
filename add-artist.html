@@ -8,7 +8,7 @@
     </head>
     
     <body class="bg-red-900 ">
-        <nav class="flex h-16 w-screen justify-around items-center bg-red-900 rounded-md">
+        <nav class="flex sticky top-0 h-16 w-screen justify-around items-center bg-red-900 rounded-md shadow-md">
             <a class="flex h-full items-center" href="index.html">
                 <h1 class="text-zinc-50 font-semibold">ArtistILike</h1>
             </a>
@@ -22,21 +22,21 @@
             </div>
         </nav>
 
-        <main class="flex flex-col gap-6 min-h-screen p-4">
+        <main class="flex flex-col align-center gap-6 min-h-screen p-4 shadow-md">
             <div class="flex justify-center">
                 <h2 class="text-white font-semibold text-2xl">Make a request to add a new artist</h2>
             </div>
 
-            <form>
+            <form class="shadow-md mx-auto flex flex-col justify-center w-3/4 p-8">
                 <!-- Artist Name - Genre of Art - Favourite Art Piece - References - Brief detail - Pictures -->
-                <div>
-                    <label for="artist-name">Artist Name</label>
-                    <input type="text" name="artist-name"><br>
+                <div class="flex flex-col w-full">
+                    <label for="artist-name">*Artist Name</label>
+                    <input class="border-2 border-gray-950 bg-transparent" type="text" name="artist-name" required><br>
                 </div>
             
-                <div>
-                    <label for="genre">Genre of Art</label>
-                    <select id="genre" name="artist-genre">
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="genre">*Genre of Art</label>
+                    <select class="border-2 border-gray-950 bg-transparent" id="genre" name="artist-genre" required>
                         <option value="no-genre" disabled selected>Select a genre</option>
                         <option value="abstract">Abstract</option>
                         <option value="portrait">Portrait</option>
@@ -46,27 +46,34 @@
                     </select>
                 </div>
             
-                <div>
+                <div class="flex flex-col mb-4 w-full">
                     <label for="favourite-piece">What is your favourite art piece of theirs?</label>
-                    <input type="text" id="favourite-piece" name="favourite-piece">
+                    <input class="border-2 border-gray-950 bg-transparent" type="text" id="favourite-piece" name="favourite-piece">
                 </div>
             
-                <div>
+                <div class="flex flex-col mb-4 w-full">
                     <label for="artist-contact">Media References (E.G: Instagram, Website, Exhibition etc)</label>
-                    <input type="text" name="reference-one">
-                    <input type="text" name="reference-two">
-                    <input type="text" name="reference-three">
+                    <div class="flex flex-col gap-2 rounded-md">
+                        <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" name="reference-one">
+                        <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" name="reference-two">
+                        <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" name="reference-three">
+                    </div>
                 </div>
             
-                <div>
-                    <label for="customer-summary">Give a brief explanation of what you like about this artist :)</label>
-                    <textarea name="customer-summary"></textarea>
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="customer-summary">*Give a brief explanation of what you like about this artist :)</label>
+                    <textarea class="border-2 border-gray-950 bg-transparent h-24 p-2" name="customer-summary" required></textarea>
                 </div>
             
-                <div>
-                    <label for="artist-pictures">Upload Pictures</label>
-                    <input type="file" name="artist-pictures" accept="image/*" multiple>
-                    <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple images.</p>
+                <div class="flex flex-col mb-4 w-full">
+                    <label for="artist-pictures">Upload Pictures 
+                        <small class="italic text-sm text-gray-500">*Hold down the Ctrl (windows) or Command (Mac) button to select multiple images.*</small>
+                    </label>
+                    <input class="border-2 border-gray-950 bg-transparent" type="file" name="artist-pictures" accept="image/*" multiple required>
+                </div>
+
+                <div class="flex flex-col mb-4 w-full">
+                    <button type="submit" class="bg-slate-500 text-white p-2 rounded-md w-1/4">Submit</button>
                 </div>
             </form>
             
