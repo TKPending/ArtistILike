@@ -55,9 +55,13 @@
             </section>
 
             <!-- Showcase some of my favourite artpieces -->
-            <section class="flex-1">
+            <section class="flex flex-col gap-4 items-center">
+                <div class="text-white font-semibold text-center">
+                    <h3 class="text-xl">Some of my favourite pieces</h4>
+                </div>
+
                 <!-- TODO: Reference them to actual images -->
-                <div class="bg-neutral-900 flex gap-4 justify-around text-white p-4 h-auto">
+                <div class="bg-neutral-900 flex gap-4 justify-around text-white p-4 h-auto w-3/4 hover:scale-105 hover:transition ease-out rounded-lg shadow-md">
                     <div class="flex flex-col gap-2 items-center h-96"> <!-- Center content vertically and horizontally -->
                         <h4 class="underline">Countercurrent</h4>
                         <img class="object-cover w-full h-3/4 rounded-md" src="assets/miles/countercurrent.jpg" alt="Painting called countercurrent. Image of heads inside of water, all facing one direction aside from one.">
@@ -79,7 +83,12 @@
 
             <!-- Have a gallery of his artwork -->
             <!-- TODO: Add anchor for each image. Make more interactive -->
-            <section class="flex items-center min-h-screen p-10">
+            <section class="flex flex-col gap-6 items-center min-h-screen p-10">
+
+                <div class="text-white font-semibold">
+                    <h3 class="text-xl">More from Miles Johnston...</h4>
+                </div>
+
                 <div class="grid grid-cols-5 gap-4 gap-y-1 bg-neutral-900 rounded-md p-4">
                     <div class="overflow-hidden">
                         <img class="object-cover w-full h-full rounded-md" src="assets/miles/gallery/1.jpg" alt="">
