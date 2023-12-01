@@ -22,21 +22,23 @@
             </div>
         </nav>
 
-        <main class="flex flex-col align-center gap-6 min-h-screen p-4 shadow-md">
-            <div class="flex justify-center">
-                <h2 class="text-white font-semibold text-2xl">Make a request to add a new artist</h2>
+        <main class="flex flex-col my-8 align-center gap-8 min-h-screen p-4 shadow-md">
+            <div class="flex justify-center ">
+                <h2 class="text-white font-semibold text-2xl">Recommend some of your favourite arists!</h2>
             </div>
 
-            <form class="shadow-md mx-auto flex flex-col justify-center w-3/4 p-8">
-                <!-- Artist Name - Genre of Art - Favourite Art Piece - References - Brief detail - Pictures -->
+            <!-- Make this stand out - Give more of a shadow box for whole form. Give indidivual inputs something to make it stand out too -->
+            <form class="mx-auto flex flex-col gap-4 justify-center w-3/4 p-8 bg-neutral-900 rounded-lg">
+                <!-- Artist Name - Genre of Art - Favourite Art Piecebox-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; - References - Brief detail - Pictures -->
                 <div class="flex flex-col w-full">
-                    <label for="artist-name">*Artist Name</label>
-                    <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" name="artist-name" required><br>
+                    <label class="text-white" for="artist-name">*Artist Name</label>
+                    <input class="border-2 border-red-200 rounded-lg bg-gray-300 w-2/5 mt-1" type="text" name="artist-name" required><br>
                 </div>
             
                 <div class="flex flex-col mb-4 w-full">
-                    <label for="genre">*Genre of Art</label>
-                    <select class="border-2 border-gray-950 bg-transparent w-1/4" id="genre" name="artist-genre" required>
+                    <label class="text-white" for="genre">*Genre of Art</label>
+                    <!-- Change the colour of text here -->
+                    <select class="border-2 border-red-200 rounded-lg bg-gray-300 w-1/4 mt-1" id="genre" name="artist-genre" required>
                         <option value="no-genre" disabled selected>Select a genre</option>
                         <option value="abstract">Abstract</option>
                         <option value="portrait">Portrait</option>
@@ -46,40 +48,38 @@
                 </div>
             
                 <div class="flex flex-col mb-4 w-full">
-                    <label for="favourite-piece">What is your favourite art piece of theirs?</label>
-                    <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" id="favourite-piece" name="favourite-piece">
+                    <label class="text-white" for="favourite-piece">What is your favourite art piece of theirs?</label>
+                    <input class="border-2 border-red-200 rounded-lg bg-gray-300 w-2/5 mt-1" type="text" id="favourite-piece" name="favourite-piece">
                 </div>
             
                 <div class="flex flex-col mb-4 w-full">
-                    <label for="artist-contact">Media References (E.G: Instagram, Website, Exhibition etc)</label>
+                    <label class="text-white" for="artist-contact">Media References (E.G: Instagram, Website, Exhibition etc)</label>
                     <div class="flex flex-col gap-2 rounded-md">
-                        <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" name="reference-one">
-                        <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" name="reference-two">
-                        <input class="border-2 border-gray-950 bg-transparent w-2/5" type="text" name="reference-three">
+                        <input class="border-2 border-red-200 rounded-lg bg-gray-300 w-2/5 mt-1" type="text" name="reference-one">
+                        <input class="border-2 border-red-200 rounded-lg bg-gray-300 w-2/5" type="text" name="reference-two">
+                        <input class="border-2 border-red-200 rounded-lg bg-gray-300 w-2/5" type="text" name="reference-three">
                     </div>
                 </div>
             
                 <div class="flex flex-col mb-4 w-full">
-                    <label for="customer-summary">*Give a brief explanation of what you like about this artist :)</label>
-                    <textarea class="border-2 border-gray-950 bg-transparent h-24 p-2" name="customer-summary" required></textarea>
+                    <label class="text-white" for="customer-summary">*Give a brief explanation of what you like about this artist :)</label>
+                    <textarea class="border-2 border-red-200 rounded-lg bg-gray-300 h-24 p-2 mt-1" name="customer-summary" required></textarea>
                 </div>
             
-                <div class="flex flex-col mb-4 w-full">
-                    <label for="artist-pictures">Upload Pictures 
+                <div class="flex flex-col mb-4 w-full ">
+                    <label class="text-white" for="artist-pictures">Upload Pictures 
                         <small class="italic text-sm text-gray-500">*Hold down the Ctrl (windows) or Command (Mac) button to select multiple images.*</small>
                     </label>
-                    <input class="bg-transparent w-2/5" type="file" name="artist-pictures" accept="image/*" multiple>
+                    <input class="bg-transparent w-2/5 text-white mt-1" type="file" name="artist-pictures" accept="image/*" multiple>
                 </div>
 
-                <div class="flex flex-col mb-4 w-full">
-                    <button type="submit" class="bg-slate-500 text-white p-2 rounded-md w-1/4">Submit</button>
+                <!-- Move button - Give space between inputs and bottom of container -->
+                <div class="flex justify-end my-4 w-full">
+                    <button type="submit" class="bg-slate-500 text-white p-2 rounded-md w-1/4 hover:bg-red-900 hover:border-1 hover:border-white">Submit</button>
                 </div>
-            </form>
-            
-            
+            </form>    
         </main>
 
-        <!-- TODO: Prevent this from moving once the artists have been highlighted -->
         <footer class="w-full shadow-md h-12">
             <div class="flex justify-center mx-auto max-w-screen-xl md:flex md:items-center md:justify-between">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 w-2/7">© 2023 <a href="https://flowbite.com/" class="hover:underline">TonyK™</a>. All Rights Reserved.</span>
