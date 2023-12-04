@@ -11,7 +11,7 @@
     </head>
     
     <!-- TODO: Make the screen still work even on a smaller screen -->
-    <body class="bg-red-900 flex flex-col gap-6 overflow-x-hidden">
+    <body class="bg-red-900 flex flex-col overflow-x-hidden overflow-y-hidden">
         <nav class="flex h-16 w-screen justify-around items-center bg-red-900 rounded-md sticky top-0 z-10  shadow-md">
             <a class="flex h-full items-center" href="index.html">
                 <h1 class="text-zinc-50 font-semibold">ArtistILike</h1>
@@ -31,14 +31,15 @@
             </a>
         </nav>
 
-        <div class="h-full shadow-md p-4">
+        <!-- Why is this section not filling the screen as expected? -->
+        <div class="flex flex-col my-auto h-screen gap-10 p-4 items-center justify-center">
 
-            <div class="flex flex-col mb-8 items-center leading-6">
+            <div class="flex flex-col items-center leading-6">
                 <h1 class="text-slate-50 font-sans font-bold text-2xl mb-2">Welcome to ArtistILike</h1>
                 <h3 class="text-slate-50 font-sans font-semibold">Here are some of the artists I like, along with some of their artpieces</h3>
             </div>
 
-            <main class="flex justify-between gap-8 rounded-lg px-24 ">
+            <main class="flex justify-between gap-8 rounded-lg w-3/4">
                 <div class="bg-neutral-900 py-4 rounded-lg flex-1 pl-5 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:scale-102 hover:border">
                     <a class="flex flex-col" href="miles.html" >
                         <img src="assets/miles-self.jpg" class="h-52 w-4/6 mx-auto mb-2 rounded-full bg-white shadow-md object-cover ">
@@ -132,7 +133,7 @@
         </div>
 
         <!-- TODO: Prevent this from moving once the artists have been highlighted -->
-        <footer class="absolute bottom-0 w-full shadow-md h-12">
+        <footer class="absolute bottom-0 sticky w-full shadow-md h-12">
             <div class="flex justify-center mx-auto max-w-screen-xl md:flex md:items-center md:justify-between">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 w-2/7">© 2023 <a href="https://flowbite.com/" class="hover:underline">TonyK™</a>. All Rights Reserved.</span>
             
